@@ -37,18 +37,18 @@ function MyApp({ Component, router, pageProps }) {
       <nav>
         <ul>
           <li
-            style={{
-              borderBottom:
-                router.state.pathname === '/' ? '2px solid #0070f3' : null,
-            }}
+          // style={{
+          //   borderBottom:
+          //     router.state.pathname === '/' ? '2px solid #0070f3' : null,
+          // }}
           >
             <Link href="/">Home</Link>
           </li>
           <li
-            style={{
-              borderBottom:
-                router.state.pathname === '/about' ? '2px solid #0070f3' : null,
-            }}
+          // style={{
+          //   borderBottom:
+          //     router.state.pathname === '/about' ? '2px solid #0070f3' : null,
+          // }}
           >
             <Link href="/about">About</Link>
           </li>
