@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+import Layout from '../../components/layout';
+
 const TEMPLES_DATA = [
   'bajrang-bali.jpeg',
   'krishna-arjun.jpeg',
@@ -31,6 +33,7 @@ const Temples = () => {
     path: item,
   }));
   return (
+    // <Layout>
     <div className="container">
       <motion.div
         initial="initial"
@@ -68,6 +71,7 @@ const Temples = () => {
         </div>
       </motion.div>
     </div>
+    // </Layout>
   );
 };
 
