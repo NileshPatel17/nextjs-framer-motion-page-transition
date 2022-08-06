@@ -2,6 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+const TEMPLES = [
+  'bajrang-bali.jpeg',
+  'krishna-arjun.jpeg',
+  'krishna-arjun33.jpeg',
+  'maa-durga.jpeg',
+  'Martand-sun-temple.jpeg',
+  'mumbai.jpeg',
+];
 const templesVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
   enter: {
@@ -18,7 +26,7 @@ const templesVariants = {
   },
 };
 const Temples = () => {
-  const total = Array.from({ length: 6 }, (_, i) => i);
+  // const total = Array.from({ length: 6 }, (_, i) => i);
   return (
     <div className="container">
       <motion.div
@@ -36,9 +44,9 @@ const Temples = () => {
             flexWrap: 'wrap',
           }}
         >
-          {total.map((i) => (
-            <motion.div variants={templesVariants} key={`temple_${i}`}>
-              <Link href={`/temples/bajrang-bali`}>
+          {TEMPLES.map((item, index) => (
+            <motion.div variants={templesVariants} key={`temple_${index}`}>
+              <Link href={`/temples/${item}`}>
                 <motion.img
                   whileHover="hover"
                   variants={{
@@ -49,7 +57,7 @@ const Temples = () => {
                   width="120px"
                   height="120px"
                   alt="about"
-                  src={'bajrang-bali.jpeg'}
+                  src={item}
                 />
               </Link>
             </motion.div>
