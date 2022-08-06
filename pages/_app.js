@@ -52,6 +52,9 @@ function MyApp({ Component, router, pageProps }) {
           >
             <Link href="/about">About</Link>
           </li>
+          <li>
+            <Link href="/temples">Temples</Link>
+          </li>
         </ul>
       </nav>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
