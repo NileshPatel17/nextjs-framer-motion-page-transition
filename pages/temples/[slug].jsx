@@ -21,8 +21,8 @@ export default function Temple() {
             duration: 0.4,
           },
         }}
-        width="400px"
-        height="350px"
+        width="480px"
+        height="400px"
         src={`/${slug}`}
         alt="temple"
       />

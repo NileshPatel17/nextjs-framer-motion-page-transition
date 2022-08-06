@@ -61,8 +61,8 @@ const Temples = () => {
                       scale: 0.96,
                     },
                   }}
-                  width="120px"
-                  height="120px"
+                  width="200px"
+                  height="150px"
                   alt="about"
                   src={item.path}
                 />
