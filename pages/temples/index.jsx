@@ -54,6 +54,7 @@ const Temples = () => {
             <motion.div variants={templesVariants} key={`temple_${index}`}>
               <Link href={`/temples/${item.path}`}>
                 <motion.img
+                  style={{ borderRadius: '5px' }}
                   whileHover="hover"
                   variants={{
                     hover: {
@@ -70,6 +71,21 @@ const Temples = () => {
           ))}
         </div>
       </motion.div>
+      <style jsx>
+        {`
+          .card {
+            margin: 1rem;
+            flex-basis: 45%;
+            padding: 1.5rem;
+            text-align: left;
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            transition: color 0.15s ease, border-color 0.15s ease;
+          }          
+          `}
+      </style>
     </div>
     // </Layout>
   );
